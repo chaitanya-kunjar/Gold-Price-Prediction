@@ -27,7 +27,7 @@ def gold_price_prediction(input_data):
 
 def main():
     # Title
-    st.title('🪙 GOLD PRICE PREDICTION APP')
+    st.title('🪙 GOLD PRICE PREDICTION APP 🪙')
     
     SPX = st.text_input('Stocks Price')
     USO = st.text_input('US Oil Prices')
