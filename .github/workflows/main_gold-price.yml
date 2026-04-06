@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - gold-price
+name: Build and deploy Python app to Azure Web App - Gold-Price
 
 on:
   push:
@@ -63,14 +63,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B2F8349D0A0346118ABB0855DA9990F2 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5CE26B8A7B3A4477A9F34036C820B798 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_202ADC38E5BE40A384D23E558AE1D0A6 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_1831E8F7805F4CD481536D4552233CB7 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_36C5FF53829B4B56A80DD47EBCDCE129 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2637AE46628A48E8BF0CBF1C238B0DED }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'gold-price'
+          app-name: 'Gold-Price'
           slot-name: 'Production'
           
